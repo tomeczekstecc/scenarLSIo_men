@@ -1,1 +1,7 @@
-<h2>scenarLSIo</h2>
+<h2>Przegląd scen</h2>
+<div>
+  <br />
+  <% books.forEach(book => {%>
+  <img height="150" width="100" src="<%= book.coverImagePath %>" alt="" />
+  <%})%>
+</div>

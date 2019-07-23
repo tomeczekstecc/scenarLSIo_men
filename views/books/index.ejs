@@ -1,0 +1,34 @@
+<h2>Wszystkie sceny - szukaj</h2>
+<form action="/books" method="GET">
+  <div>
+    <label for="">Nazwa sceny</label>
+    <input type="text" name="title" value="<%= searchOptions.title %>" />
+  </div>
+
+  <div>
+    <label for="">Opublikowano po: </label>
+    <input
+      type="date"
+      name="publishedAfter"
+      value="<%= searchOptions.publishedAfter %>"
+    />
+  </div>
+  <div>
+    <label for="">Opublikowano przed: </label>
+    <input
+      type="date"
+      name="publishedBefore"
+      value="<%= searchOptions.publishedBefore %>"
+    />
+  </div>
+
+  <div>
+    <button type="submit">Szukaj</button>
+  </div>
+</form>
+<div>
+  <br />
+  <% books.forEach(book => {%>
+  <img height="150" width = "100" src="<%= book.coverImagePath %>" alt="" />
+  <%})%>
+</div>
