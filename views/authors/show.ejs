@@ -1,0 +1,12 @@
+<h2><%= author.name %></h2>
+<a href="/authors/<%=author.id%>/edit">Edytuj</a>
+<%- include('../partials/deleteForm', {url: `/authors/${author.id}`})%>
+<%if(booksByAuthor.length > 0){%>
+<h2>Sceny autora</h2>
+<div>
+  <br />
+  <% booksByAuthor.forEach(book => {%>
+  <img height="150" width="100" src="<%= book.coverImagePath %>" />
+  <%})%>
+</div>
+<% } %>

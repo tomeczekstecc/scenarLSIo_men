@@ -1,0 +1,6 @@
+<h2>Edytuj Autora</h2>
+<form action="/authors/<%= author.id %>?_method=PUT" method="POST">
+  <%- include('_form_fields') %>
+  <a href="/authors/<%= author.id %>">Rezygnuj</a>
+  <button type="submit">Zatwierdź zmiany</button>
+</form>

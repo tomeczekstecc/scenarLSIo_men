@@ -4,8 +4,13 @@
   <input type="text" name="name" value="<%= searchOptions.name %>" />
   <button type="submit">Szukaj</button>
 </form>
+<div>
+  <br />
+  <% authors.forEach(author => {%>
+  <h3 style="display:inline-block"><%= author.name %></h3>
+  <a href="/authors/<%= author.id %>">Zobacz</a>
+  <a href="/authors/<%= author.id %>/edit">Edytuj</a>
+<%- include('../partials/deleteForm', { url: `/authors/${author.id}` })%>
 
-<br>
-<% authors.forEach(author => {%>
-  <h3><%= author.name %></h3>
-<%})%>
+  <%})%>
+</div>
