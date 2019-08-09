@@ -39,7 +39,8 @@ router.post('/', async (req, res) => {
     author: req.body.author,
     publishDate: new Date(req.body.publishDate),
     pageCount: req.body.pageCount,
-    description: req.body.description
+    description: req.body.description,
+    sort: req.body.sort
   })
   saveCover(book, req.body.cover)
 
