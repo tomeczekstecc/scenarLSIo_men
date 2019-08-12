@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "stert": "node server.js",
+    "start": "node server.js",
     "devStart": "nodemon server.js"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
+    "heroku-cli": "^7.0.9",
     "method-override": "^3.0.0",
     "mongoose": "^5.6.5"
   },
