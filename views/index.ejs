@@ -1,8 +1,12 @@
-<h2>Przegląd scen</h2>
-<div class="scenes-container">
-  <% books.forEach(book => {%>
-  <a href="/books/<%=book.id %>">
-    <img src="<%= book.coverImagePath %>" alt="" />
-  </a>
-  <%})%>
+<div class ="scenes-main" >
+  <h2>Przegląd scen</h2>
+  <div class="scenes-container">
+    <% books.forEach(book => {%>
+
+    <a href="/books/<%=book.id %>">
+      <img src="<%= book.coverImagePath %>" alt="" />
+    </a>
+
+    <%})%>
+  </div>
 </div>

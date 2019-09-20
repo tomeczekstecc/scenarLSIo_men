@@ -1,24 +1,126 @@
   @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+body {
+  background:rgb(65, 62, 62);
+  color: beige
+}
 
-  :root{
-   font-family: 'Montserrat', sans-serif;
+
+:root{
+  font-family: 'Montserrat', sans-serif;
   }
-
-.scenes-container{
-  display: flex;
-justify-content: space-between;
-
+body{
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .scenes-container img{
-  width: 25rem;
-  height: 15rem;
+ width: 70vw;
+  height: 60vh;
   border: 1px solid rgb(161, 155, 155);
   box-shadow: 7px 7px 5px 0px rgba(0,0,0,0.75);
+  margin-bottom: 2rem;
+}
+
+
+.scenes-container{
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+
 }
 
 .scenes-container a{
+ margin: 0 auto;
+}
+
+h2{
+  text-align: center;
+  font-size: 4em;
+margin-top: 0;
+}
+
+nav ul{
+  display: flex;
+  margin-right: 2rem;
+  justify-content:end;
+  align-content: center;
+  align-items: center;
+}
+
+nav li a{
+color: beige;
+text-decoration: none;
+font-weight: bold
+}
+
+nav li{
+list-style: none;
+margin-left: 2em;
+}
+
+nav>a{
+  font-size: 3em;
+  color: rgb(212, 212, 190);
+  text-decoration: none;
+
+transition: all;
+transition: 0.5s ease-in-out;
+padding: 1rem
+
+}
+
+nav{
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  padding: 1;
+  align-content: center;
+  align-items: center;
+}
+
+nav>a:hover, nav li a:hover{
+  color: #e4e4a2;
+}
+
+.input-form>div{
+  margin:1rem;
+}
+
+#container{
+  width: 90vw;
   margin: 0 auto;
-  display: block;
+}
+
+button{
+  display: inline-block;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e4e4a2;
+  border-radius: 3px;
+  color: #e4e4a2;
+  text-overflow: clip;
+  background: rgb(65, 62, 62);
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.5s ease-in-out
+}
+
+input{
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e4e4a2;
+  border-radius: 3px / 3px;
+  color: #e4e4a2;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background:rgb(65, 62, 62);
+  margin-left: 1rem;
+  transition: 0.5s ease-in-out
+}
+
+input:hover,button:hover{
+background: rgb(82, 78, 78);
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
