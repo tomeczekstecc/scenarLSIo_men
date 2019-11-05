@@ -18,7 +18,7 @@
     "express-ejs-layouts": "^2.5.0",
     "heroku-cli": "^7.0.9",
     "method-override": "^3.0.0",
-    "mongoose": "^5.6.5"
+    "mongoose": "^5.7.5"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
